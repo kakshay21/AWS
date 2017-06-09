@@ -12,7 +12,9 @@ pip install --upgrade --user awscli
 ```
 then run command to verify installation
 
-``` aws -version```
+``` 
+aws -version
+```
 
 In case you have any trouble follow [this instruction](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)
 
@@ -41,3 +43,48 @@ Default output format [None]: json
 git clone https://git-codecommit.ap-southeast-1.amazonaws.com/v1/repos/ZOOD-PWA
 cd ZOOD-PWA
 ```
+
+# STEP 4
+## Work on your branch
+
+Do work on your own branch and your branch id is listed in your email
+
+``` 
+git pull origin master 
+```
+
+The above command is required to update your local repo with aws repo. So do it every time before starting any new feature of your own
+
+Then to switch to your own branch
+
+```
+git checkout origin akshay-1234
+```
+
+in this case my branch id is akshay-1234
+
+### And remember to update your branch
+Do update your local repo with your own branch before adding any new features
+
+```
+git pull origin akshay-1234
+```
+
+and now since your in your own updated branch you can start your work by creating as many branch as you want "locally" by
+
+```
+git checkout -b akshay-1234-my-new-feature
+```
+
+and when you're done with the change
+
+```
+git commit -a
+```
+And then add commit message to keep a track of your changes just by looking at your message
+
+and when you're done with that push it to your aws CodeCommit branch by 
+```
+git push origin akshay-1234
+```
+### remember not to push anything in the master until you're explicily told.
