@@ -16,7 +16,7 @@ then run command to verify installation
 aws --version
 ```
 
-In case you have any trouble follow [this instruction](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)
+In case you have any trouble, then follow [this instruction](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)
 
 ## STEP 2
 ### Configure aws
