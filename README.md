@@ -38,8 +38,6 @@ Default output format [None]: json
 ## Cloning the repository
 
 ```
-mkdir -p ~/zoodify
-cd ~/zoodify
 git clone https://git-codecommit.ap-southeast-1.amazonaws.com/v1/repos/ZOOD-PWA
 cd ZOOD-PWA
 ```
