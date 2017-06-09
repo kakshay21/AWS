@@ -70,10 +70,12 @@ git checkout -b akshay_1234-my-new-feature
 ```
 
 and when you're done with the change
-
 ```
+git add *
 git commit -a
 ```
+
+
 And then add commit message to keep a track of your changes just by looking at your message
 
 and when you're done with that push it to your aws CodeCommit branch by 
