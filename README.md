@@ -63,7 +63,6 @@ git checkout origin akshay_1234
 
 in this case my branch id is akshay_1234
 
-### And remember to update your branch
 You can start your work by creating as many branch as you want "locally" by
 
 ```
