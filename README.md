@@ -13,7 +13,7 @@ pip install --upgrade --user awscli
 then run command to verify installation
 
 ``` 
-aws -version
+aws --version
 ```
 
 In case you have any trouble follow [this instruction](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)
