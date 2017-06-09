@@ -53,15 +53,15 @@ Do work on your own branch and your branch id is listed in your email
 git pull origin master 
 ```
 
-The above command is required to update your local repo with aws repo. So do it every time before starting any new feature of your own
+The above command is required to update your local repo from aws repo. So do it every time before starting any new feature of your own
 
 Then to switch to your own branch
 
 ```
-git checkout origin akshay-1234
+git checkout origin akshay_1234
 ```
 
-in this case my branch id is akshay-1234
+in this case my branch id is akshay_1234
 
 ### And remember to update your branch
 Do update your local repo with your own branch before adding any new features
@@ -87,4 +87,4 @@ and when you're done with that push it to your aws CodeCommit branch by
 ```
 git push origin akshay-1234
 ```
-### remember not to push anything in the master until you're explicily told.
+### remember not to push anything in the master until you're explicitly told.
