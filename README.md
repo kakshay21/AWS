@@ -64,16 +64,10 @@ git checkout origin akshay_1234
 in this case my branch id is akshay_1234
 
 ### And remember to update your branch
-Do update your local repo with your own branch before adding any new features
+You can start your work by creating as many branch as you want "locally" by
 
 ```
-git pull origin akshay-1234
-```
-
-and now since your in your own updated branch you can start your work by creating as many branch as you want "locally" by
-
-```
-git checkout -b akshay-1234-my-new-feature
+git checkout -b akshay_1234-my-new-feature
 ```
 
 and when you're done with the change
@@ -85,6 +79,12 @@ And then add commit message to keep a track of your changes just by looking at y
 
 and when you're done with that push it to your aws CodeCommit branch by 
 ```
-git push origin akshay-1234
+git push origin akshay_1234
 ```
 ### remember not to push anything in the master until you're explicitly told.
+
+Do update your local repo with your own branch before adding any new features
+
+```
+git pull origin akshay_1234
+```
