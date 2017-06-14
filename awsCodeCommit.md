@@ -98,3 +98,31 @@ Do update your local repo with your own branch before adding any new features
 ```
 git pull origin akshay_1234
 ```
+
+## This guide is only for Admin who is given task to merge to master
+
+Now suppose you need to merge the changes to a production ready branch i.e master. For this scenario let's say you've a team leader who is given rights to merge. Now USER1 has made a feature and you want to merge it or test it whether he is right or not. Now USER1 branch name is "USER1-branch".
+So you're first step is without disturbing your current work switch to master by typing
+```
+git checkout master
+```
+and then create a temporary branch by typing
+```
+git checkout -b myTempLocalBranch
+```
+that command will make a temporary branch and switch to that branch. Keep in mind that we don't need to make any edits in the production directly because that leads to several problems. Just concider not doing that.
+
+Now when you're in myTempLocalBranch pull the USER1 branch
+```
+git pull origin USER1-branch
+```
+This command will make the code of that user on you local machine.
+
+Now your task is to see the changes and verify it. You can see the difference that USER1 has made from master by typing
+```
+git diff origin/master origin/USER1-branch
+ ```
+When you're satisfy with the feature merge it to master branch by typing
+```
+git merge USER1-branch
+```
