@@ -99,6 +99,22 @@ Do update your local repo with your own branch before adding any new features
 git pull origin akshay_1234
 ```
 
+## Now Suppose you want to share yout code with other member
+Just tell them your branch name and then can pull it on another locally temporary branch
+
+Just make sure you're done with your work and checkout to master by typing
+```
+git checkout master
+```
+Now create a branch so that you don't disturb the master
+``` 
+git checkout -b myTempBranch
+```
+now pull your teammate code here. Let's suppose your teammate branch is "USER1-branch"
+```
+git pull origin USER1-branch
+```
+
 ## This guide is only for Admin who is given task to merge to master
 
 Now suppose you need to merge the changes to a production ready branch i.e master. For this scenario let's say you've a team leader who is given rights to merge. Now USER1 has made a feature and you want to merge it or test it whether he is right or not. Now USER1 branch name is "USER1-branch".
