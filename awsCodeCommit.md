@@ -124,5 +124,5 @@ git diff origin/master origin/USER1-branch
  ```
 When you're satisfy with the feature merge it to master branch by typing
 ```
-git merge USER1-branch
+git merge --no-ff USER1-branch
 ```
