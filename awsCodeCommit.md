@@ -115,7 +115,7 @@ now pull your teammate code here. Let's suppose your teammate branch is "USER1-b
 git pull origin USER1-branch
 ```
 
-## This guide is only for Admin who is given task to merge to master
+## This guide is only for Admin who is given a task to merge to master
 
 Now suppose you need to merge the changes to a production ready branch i.e master. For this scenario let's say you've a team leader who is given rights to merge. Now USER1 has made a feature and you want to merge it or test it whether he is right or not. Now USER1 branch name is "USER1-branch".
 So you're first step is without disturbing your current work switch to master by typing
