@@ -89,7 +89,7 @@ codePipeLine is available [here](http://console.aws.amazon.com/codepipeline)
  
  ![alt ](https://github.com/kakshay21/AWS/blob/master/Screen%20Shot%202017-06-14%20at%2011.47.36%20AM.png)
  
- In youe case there will just one CodeCommit and CodeDeploy module.
+ In your case there will just one CodeCommit and CodeDeploy module.
  
 3. Now click on edit and select the module for CodeCommit now you'll need to add more code commit blocks here.
  
