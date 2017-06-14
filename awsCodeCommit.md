@@ -21,7 +21,7 @@ In case you have any trouble, then follow [this instruction](http://docs.aws.ama
 ## STEP 2
 ### Configure aws
 
-run this comand
+run this command
 
 ```
 $ aws configure
