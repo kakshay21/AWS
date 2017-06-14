@@ -58,7 +58,8 @@ codePipeLine is available [here](http://console.aws.amazon.com/codepipeline)
 
 1. Click on "Get started" or if you have already created any pipelines before create a new pipeline.
 
-2. Enter a pipeline name
+2. Enter a pipeline name and You will see this
+![alt ](https://github.com/kakshay21/AWS/blob/master/Screen%20Shot%202017-06-14%20at%2011.28.58%20AM.png)
 
 3. Set service provider to "AWS Code Commit" int the source tab
 
@@ -82,6 +83,68 @@ codePipeLine is available [here](http://console.aws.amazon.com/codepipeline)
  Sounds difficult? It's fairly easy!
  
  ## Actual tutorial starts from here
- Go to [CodePipeLine](http://console.aws.amazon.com/codepipeline) console.
+ 1.Go to [CodePipeLine](http://console.aws.amazon.com/codepipeline) console.
  
+ 2.Click on the pipeline that you've just created. You'll see something like this
  
+ ![alt ](https://github.com/kakshay21/AWS/blob/master/Screen%20Shot%202017-06-14%20at%2011.47.36%20AM.png)
+ 
+ In youe case there will just one CodeCommit and CodeDeploy module.
+ 
+3. Now click on edit and select the module for CodeCommit now you'll need to add more code commit blocks here.
+ 
+4. Let's start with just one. Click on add and You'll see the simillar block in Step III. But this time add the branch you want to select but not master. If you don't see any branch other branch master, that's because you haven't created one.
+ 
+Go [here](http://console.aws.amazon.com/codecommit) and under the branch section create any no of branch you want. But in our case that is limited to no of develpoers working under same or almost same domain i.e web development.
+ 
+Now refresh it where you were in step 4. And now you'll be able to see branches other than master too.
+
+5. Select it. And name an output artifact i.e "xyz-branch-APP" the rest of the step is same as configuring CodeCommit in step V.
+
+6. Now repeat the same with codeDeploy. One important thing to remember is select the same artifact that you've created i.e "xyz-branch-APP" for CodeDeploy. So that you're mapping it correctly.
+
+That's it! your pipeline will be configured by this step. Now when you push any changes to CodeCommit it will be deployed on the same server with zero downtime!
+
+Now suppose you want your developer to experiment on the same server and you want to see their progress as well. So for this scenario let's build something unique
+
+let's suppose you want this kind of setup. In which you want two folders, one for experiment and one for their latest integration. 
+```
+    // for USER1
+    -- USER1/PLAY   // for experiment
+    -- USER1/MAIN   // for the progress
+    // for USER2
+    -- USER2/PLAY   // for experiment
+    -- USER2/MAIN   // for the progress    
+```
+
+For this create similar kind of strucute and push it to master and push the same to other branches as well. So that the code structure is same for all the branches
+
+### step *
+Now in your appspec.yml file you'll need to put it like something like this
+```
+version: 0.0
+os: linux
+files:
+     <-- conside from here -->
+  - source: /PLAY
+    destination: /var/www/html/USER1/PLAY
+  - source: /PWA
+    destination: /var/www/html/USER1/PWA
+    <-- to here -->
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies
+      timeout: 300
+      runas: root
+    - location: scripts/start_server
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_server
+      timeout: 300
+      runas: root
+```
+
+Remeber we are doing this for USER1 so switch to USER1-branch before making any change. Now commit the change and push it to USER1-branch
+
+Do the same step * for USER2 after switching to USER2-branch
