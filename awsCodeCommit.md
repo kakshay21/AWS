@@ -53,7 +53,7 @@ Do work on your own branch and your branch id is listed in your email
 git pull origin master 
 ```
 
-The above command is required to update your local repo from aws repo. So do it every time before starting any new feature of your own
+The above command is required to update your local repo from aws repo. So do it every time before starting any new feature of your own.
 
 Then to switch to your own branch
 
@@ -62,6 +62,15 @@ git checkout origin akshay_1234
 ```
 
 in this case my branch id is akshay_1234
+
+### One important thing to note
+Here we have created two directories PLAY and PWA
+
+Concider PWA as your master (just consider it!). You're not allowed to do anything with master unless explicitly told.
+
+So update PLAY folder only when you're sure that this new feature it good and ready for production. We will monitor your progress based on what is present in this directory.
+
+And now concider PLAY as your playground. You can experiment any new things, any random stuff without any issue. You can send the link of this folder for verifying without integrating it to PWA folder. 
 
 You can start your work by creating as many branch as you want "locally" by
 
