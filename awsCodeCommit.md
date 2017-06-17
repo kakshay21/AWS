@@ -102,11 +102,11 @@ git pull origin akshay_1234
 ### To see the changes live
 For PLAY
 
-Go to https://ec2-13-228-78-10.ap-southeast-1.compute.amazonaws.com/ANIKET/PLAY
+Go to http://ec2-13-228-78-10.ap-southeast-1.compute.amazonaws.com/ANIKET/PLAY
 
 For WPA
 
-Go to https://ec2-13-228-78-10.ap-southeast-1.compute.amazonaws.com/ANIKET/PLAY
+Go to http://ec2-13-228-78-10.ap-southeast-1.compute.amazonaws.com/ANIKET/PLAY
 
 
 ## Now Suppose you want to share yout code with other member
