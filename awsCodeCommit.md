@@ -108,9 +108,10 @@ For WPA
 
 Go to http://ec2-13-228-78-10.ap-southeast-1.compute.amazonaws.com/ANIKET/PWA
 
+### Changes will take 2-5 min to deploy on this server.
 
 ## Now Suppose you want to share yout code with other member
-Just tell them your branch name and then can pull it on another locally temporary branch
+Just tell them your branch name and then can pull it on another locally temporary branch.
 
 Just make sure you're done with your work and checkout to master by typing
 ```
@@ -124,7 +125,7 @@ now pull your teammate code here. Let's suppose your teammate branch is "USER1-b
 ```
 git pull origin USER1-branch
 ```
-
+Now if you see the code locally you'll actually see the codes of your teammate.
 ## This guide is only for Admin who is given a task to merge to master
 
 Now suppose you need to merge the changes to a production ready branch i.e master. For this scenario let's say you've a team leader who is given rights to merge. Now USER1 has made a feature and you want to merge it or test it whether he is right or not. Now USER1 branch name is "USER1-branch".
