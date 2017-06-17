@@ -106,7 +106,7 @@ Go to http://ec2-13-228-78-10.ap-southeast-1.compute.amazonaws.com/ANIKET/PLAY
 
 For WPA
 
-Go to http://ec2-13-228-78-10.ap-southeast-1.compute.amazonaws.com/ANIKET/PLAY
+Go to http://ec2-13-228-78-10.ap-southeast-1.compute.amazonaws.com/ANIKET/PWA
 
 
 ## Now Suppose you want to share yout code with other member
