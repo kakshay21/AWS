@@ -99,6 +99,16 @@ Do update your local repo with your own branch before adding any new features
 git pull origin akshay_1234
 ```
 
+### To see the changes live
+For PLAY
+
+Go to https://ec2-13-228-78-10.ap-southeast-1.compute.amazonaws.com/ANIKET/PLAY
+
+For WPA
+
+Go to https://ec2-13-228-78-10.ap-southeast-1.compute.amazonaws.com/ANIKET/PLAY
+
+
 ## Now Suppose you want to share yout code with other member
 Just tell them your branch name and then can pull it on another locally temporary branch
 
