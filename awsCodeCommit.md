@@ -58,7 +58,7 @@ The above command is required to update your local repo from aws repo. So do it 
 Then to switch to your own branch
 
 ```
-git checkout origin akshay_123
+git checkout origin akshay_1234
 ```
 
 in this case my branch id is akshay_1234
